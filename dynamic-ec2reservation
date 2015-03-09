@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+""" Dynamic DynamoDB - Auto rebalancing of EC2 Reserved Instances between AZs """
+from __future__ import print_function
+
+import sys
+import dynamic_ec2reservation
+
+if __name__ == '__main__':
+    try:
+        dynamic_ec2reservation.main()
+    except KeyboardInterrupt:
+        print('')
+        sys.exit(0)
+    sys.exit(0)
+
+sys.exit(1)
